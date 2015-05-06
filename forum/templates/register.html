@@ -1,20 +1,28 @@
 <html>
-<body>
+    <body>
+        <table align="center">
+            <tr>
+                <td><a href="/">Home</a></td>
+                <td><a href="/login">Login</a></td>
+                <td><a href="/register">Register</a></td>
+            </tr>
+        </table>
+        <hr>
 
-  <h1>Registration</h1>
+      <h1>Registration</h1>
 
-   {% if errors %}
-     <p class="error">{{ errors }}</p>
-  {% endif %}
+       {% if errors %}
+         <p class="error">{{ errors }}</p>
+      {% endif %}
 
-  <form action="" method="post">
-    <label for="username">User name:</label>
-    <input type="text" name="username" value="" id="username">
-    <label for="password">Password:</label>
-    <input type="password" name="password" value="" id="password">
+      <form action="" method="post">
+        <label for="username">User name:</label>
+        <input type="text" name="username" value="" id="username">
+        <label for="password">Password:</label>
+        <input type="password" name="password" value="" id="password">
 
-    <input type="submit" value="login" />
-  </form>
-  or <a href="/login">login</a>.
-</body>
+        <input type="submit" value="login" />
+      </form>
+      or <a href="/login">login</a>.
+    </body>
 </html>
